@@ -29,9 +29,11 @@ var x = setInterval(function() {
     document.getElementById("time").innerHTML = "<div class='container'><div class='days block'>"+ days + "<br>Days</div>" + "<div class='hours block'>" + hours + "<br>Hours</div>" + "<div class='minutes block'>" + minutes + "<br>Minutes</div>" + "<div class='seconds block'>" + seconds + "<br>Seconds</div></div>";
     
     // If the count down is over, write some text 
-    if (distance < 0) {
+    alert(distance);
+    if (distance > 0) {
         clearInterval(x);
         document.getElementById("time").innerHTML = "Bless the married couple for happy life!";
+        document.getElementById("time").innerHTML = "See live streaming <a href='www.google.com'>here</>";
     }
 }, 1000);
 
